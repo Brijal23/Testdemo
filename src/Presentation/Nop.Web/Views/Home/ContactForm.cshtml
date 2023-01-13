@@ -1,0 +1,710 @@
+﻿    
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97204663-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-97204663-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="//rum-static.pingdom.net/pa-5f969825dfb2d50013000131.js" async></script>
+    <script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
+    <title>Сustom Totals &#8211; Cost Calculator</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+    <link rel="alternate" type="application/rss+xml" title="Cost Calculator &raquo; Feed" href="https://stylemixthemes.com/cost-calculator/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Cost Calculator &raquo; Comments Feed" href="https://stylemixthemes.com/cost-calculator/comments/feed/" />
+    <script>
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/stylemixthemes.com\/cost-calculator\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.3" } };
+        /*! This file is auto-generated */
+        !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode, e = (p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0), i.toDataURL()); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([129777, 127995, 8205, 129778, 127999], [129777, 127995, 8203, 129778, 127999]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <link href="~/css/stylecalculator.css" rel="stylesheet" />
+    <link rel='stylesheet' id='wp-block-library-css' href='https://stylemixthemes.com/cost-calculator/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3' media='all' />
+    <style id='wp-block-library-theme-inline-css'>
+        .wp-block-audio figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-audio figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-code {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Menlo,Consolas,monaco,monospace;
+            padding: .8em 1em
+        }
+
+        .wp-block-embed figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-embed figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .blocks-gallery-caption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .blocks-gallery-caption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-image figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-image figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-pullquote {
+            border-top: 4px solid;
+            border-bottom: 4px solid;
+            margin-bottom: 1.75em;
+            color: currentColor
+        }
+
+            .wp-block-pullquote__citation, .wp-block-pullquote cite, .wp-block-pullquote footer {
+                color: currentColor;
+                text-transform: uppercase;
+                font-size: .8125em;
+                font-style: normal
+            }
+
+        .wp-block-quote {
+            border-left: .25em solid;
+            margin: 0 0 1.75em;
+            padding-left: 1em
+        }
+
+            .wp-block-quote cite, .wp-block-quote footer {
+                color: currentColor;
+                font-size: .8125em;
+                position: relative;
+                font-style: normal
+            }
+
+            .wp-block-quote.has-text-align-right {
+                border-left: none;
+                border-right: .25em solid;
+                padding-left: 0;
+                padding-right: 1em
+            }
+
+            .wp-block-quote.has-text-align-center {
+                border: none;
+                padding-left: 0
+            }
+
+            .wp-block-quote.is-large, .wp-block-quote.is-style-large, .wp-block-quote.is-style-plain {
+                border: none
+            }
+
+        .wp-block-search .wp-block-search__label {
+            font-weight: 700
+        }
+
+        :where(.wp-block-group.has-background) {
+            padding: 1.25em 2.375em
+        }
+
+        .wp-block-separator.has-css-opacity {
+            opacity: .4
+        }
+
+        .wp-block-separator {
+            border: none;
+            border-bottom: 2px solid;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+            .wp-block-separator.has-alpha-channel-opacity {
+                opacity: 1
+            }
+
+            .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+                width: 100px
+            }
+
+            .wp-block-separator.has-background:not(.is-style-dots) {
+                border-bottom: none;
+                height: 1px
+            }
+
+            .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+                height: 2px
+            }
+
+        .wp-block-table thead {
+            border-bottom: 3px solid
+        }
+
+        .wp-block-table tfoot {
+            border-top: 3px solid
+        }
+
+        .wp-block-table td, .wp-block-table th {
+            padding: .5em;
+            border: 1px solid;
+            word-break: normal
+        }
+
+        .wp-block-table figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-table figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-video figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-video figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-template-part.has-background {
+            padding: 1.25em 2.375em;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+    </style>
+    <link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=8.5.1' media='all' />
+    <link rel='stylesheet' id='wc-blocks-style-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=8.5.1' media='all' />
+    <style id='global-styles-inline-css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.3' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=7.0.0' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=7.0.0' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=7.0.0' media='all' />
+    <style id='woocommerce-inline-inline-css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='twentyseventeen-fonts-css' href='https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' />
+    <link rel='stylesheet' id='twentyseventeen-style-css' href='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/style.css?ver=12368' media='all' />
+    <link rel='stylesheet' id='twentyseventeen-block-style-css' href='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/assets/css/blocks.css?ver=20190105' media='all' />
+    <!--[if lt IE 9]>
+    <link rel='stylesheet' id='twentyseventeen-ie8-css'  href='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/assets/css/ie8.css?ver=20161202' media='all' />
+    <![endif]-->
+    <link rel='stylesheet' id='stm-try-demo-css' href='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme//try-demo/assets/css/try-demo.css?ver=1.0.2' media='all' />
+    <script src='https://stylemixthemes.com/cost-calculator/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <!--[if lt IE 9]>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/assets/js/html5.js?ver=20161020' id='html5-js'></script>
+    <![endif]-->
+    <script id='stm-try-demo-js-extra'>
+        var stm_try_demo_ajax_variable = { "url": "https:\/\/stylemixthemes.com\/cost-calculator\/wp-admin\/admin-ajax.php", "nonce": "5353fe8a38" };
+    </script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme//try-demo/assets/js/try-demo.js?ver=1.0.2' id='stm-try-demo-js'></script>
+    <link rel="https://api.w.org/" href="https://stylemixthemes.com/cost-calculator/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://stylemixthemes.com/cost-calculator/wp-json/wp/v2/pages/7193" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://stylemixthemes.com/cost-calculator/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://stylemixthemes.com/cost-calculator/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.0.3" />
+    <meta name="generator" content="WooCommerce 7.0.0" />
+    <link rel="canonical" href="https://stylemixthemes.com/cost-calculator/%d1%81ustom-totals/" />
+    <link rel='shortlink' href='https://stylemixthemes.com/cost-calculator/?p=7193' />
+    <link rel="alternate" type="application/json+oembed" href="https://stylemixthemes.com/cost-calculator/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstylemixthemes.com%2Fcost-calculator%2F%25d1%2581ustom-totals%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://stylemixthemes.com/cost-calculator/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstylemixthemes.com%2Fcost-calculator%2F%25d1%2581ustom-totals%2F&#038;format=xml" />
+    <script type="text/javascript">window.ccb_nonces = { "ccb_paypal": "3c822735d8", "ccb_stripe": "646d111a76", "ccb_contact_form": "d7b2688133", "ccb_woo_checkout": "26b62ec797", "ccb_add_order": "a10bfb2af5", "ccb_orders": "be4205eb07", "ccb_update_order": "10660c7911", "ccb_send_invoice": "27adc63d9a", "ccb_get_invoice": "1df7e958f2" };</script>
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }</style>
+    </noscript>
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }</style>
+    <link rel="icon" href="https://stylemixthemes.com/cost-calculator/wp-content/uploads/2021/07/cropped-favicon-stylemixthemes-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://stylemixthemes.com/cost-calculator/wp-content/uploads/2021/07/cropped-favicon-stylemixthemes-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://stylemixthemes.com/cost-calculator/wp-content/uploads/2021/07/cropped-favicon-stylemixthemes-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://stylemixthemes.com/cost-calculator/wp-content/uploads/2021/07/cropped-favicon-stylemixthemes-270x270.png" />
+    <link href="~/css/stylecalculator.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+        <div class="calculator-settings ccb-front ccb-wrapper-6680">
+            <div data-calc-id="6680" class="calc-container vertical demoSite">
+                <!----> <div class="ccb-demo-box-styles active"><div class="ccb-box-styles"><div class="ccb-box-style-inner"><i class="ccb-icon-Union-27"></i> <span>Two columns</span></div> <div class="ccb-box-style-inner ccb-style-active"><i class="ccb-icon-Union-26"></i> <span>Vertical</span></div> <div class="ccb-box-style-inner"><i class="ccb-icon-Union-25"></i> <span>Horizontal</span></div></div></div> <div class="calc-fields calc-list calc-list__indexed loaded">
+                    <div class="calc-list-inner">
+                        <div class="calc-item-title"><h2>Web Design</h2></div> <div class="calc-fields-container">
+                            <div data-id="dropDown_field_id_0" class="calc-item ccb-field" format="" text-days="days" id="6680" converter="function () { [native code] }">
+                                <div class="calc-item__title"><span>Website type</span> <!----></div> <div class="calc-item__description before"><span></span></div> <div class="calc-drop-down-box calc_dropDown_field_id_0">
+                                    <i class="ccb-icon-Path-3485 ccb-select-arrow"></i> <select class="calc-drop-down ccb-field ccb-appearance-field" id="websitetypeid">
+                                        <option value="0" selected="selected">Select value</option>
+                                        <option value="50">
+                                            STATIC HTML
+                                        </option>
+                                        <option value="100">
+                                            CMS (WORDPRESS, DRUPAL)
+                                        </option>
+                                        <option value="130">
+                                            E-COMMERCE WEBSITE
+                                        </option>
+                                    </select> <!---->
+                                </div> <div class="calc-item__description after"><span></span></div>
+                            </div><div data-id="dropDown_field_id_1" class="calc-item ccb-field" format="" text-days="days" id="6680" converter="function () { [native code] }">
+                                <div class="calc-item__title"><span>Seo type</span> <!----></div> <div class="calc-item__description before"><span></span></div> <div class="calc-drop-down-box calc_dropDown_field_id_1">
+                                    <i class="ccb-icon-Path-3485 ccb-select-arrow"></i> <select class="calc-drop-down ccb-field ccb-appearance-field">
+                                        <option value="0" selected="selected">Select value</option>
+                                        <option value="32">
+                                            BASIC SEO
+                                        </option>
+                                        <option value="67">
+                                            ADVANCED SEO
+                                        </option>
+                                    </select> <!---->
+                                </div> <div class="calc-item__description after"><span></span></div>
+                            </div><div data-id="range_field_id_2" class="calc-item" format="" text-days="days" converter="function () { [native code] }"><div class="calc-range calc_range_field_id_2"><div class="calc-item__title ccb-range-field" style="display: flex; justify-content: space-between;"><span> Number of mockups </span> <span> 1 </span></div> <div class="calc-item__description before"><span></span></div> <div class="calc-range-slider range_range_field_id_2" style="--min:1; --max:5; --step:1; --value:1; --text-value:&quot;1 &quot;; --suffix:&quot;&quot;; --primary-color:#00B163;"><input type="range" min="1" max="5" step="1" id="numberofmockup"> <output class="cost-calc-range-output-free"></output> <div class="calc-range-slider__progress"></div></div> <div class="calc-range-slider-min-max"><span>1</span> <span>5</span></div> <div class="calc-item__description after"><span></span></div></div></div><div data-id="range_field_id_3" class="calc-item" format="" text-days="days" converter="function () { [native code] }"><div class="calc-range calc_range_field_id_3"><div class="calc-item__title ccb-range-field" style="display: flex; justify-content: space-between;"><span> Number of pages </span> <span> 1 </span></div> <div class="calc-item__description before"><span></span></div> <div class="calc-range-slider range_range_field_id_3" style="--min:0; --max:50; --step:1; --value:1; --text-value:&quot;1 &quot;; --suffix:&quot;&quot;; --primary-color:#00B163;"><input type="range" min="0" max="50" step="1" id="numberofpages"> <output class="cost-calc-range-output-free"></output> <div class="calc-range-slider__progress"></div></div> <div class="calc-range-slider-min-max"><span>0</span> <span>50</span></div> <div class="calc-item__description after"><span></span></div></div></div><div data-id="radio_field_id_5" class="calc-item ccb-field" format="" text-days="days" id="6680" converter="function () { [native code] }"><div class="calc-item__title"><span> Mobile ready </span> <!----> <!----></div> <div class="calc-item__description before"><span></span></div> <div class="calc-radio-wrapper calc_radio_field_id_5"><label><input type="radio" name="_vq0wm12yi" value="0_0"> <span class="calc-radio-label">No</span></label><label><input type="radio" name="_vq0wm12yi" value="35_1"> <span class="calc-radio-label">Yes</span></label></div> <div class="calc-item__description after"><span></span></div></div><div data-id="checkbox_field_id_6" class="calc-item ccb-field" format="" text-days="days" id="6680" converter="function () { [native code] }"><div class="calc-item__title"><span> Addons </span> <!----> <!----></div> <div class="calc-item__description before"><span></span></div> <div class="calc-checkbox calc_checkbox_field_id_6"><div class="calc-checkbox-item"><input type="checkbox" id="option__n4ejaqs0s0" value="75_0"> <label for="option__n4ejaqs0s0"><span><span class="calc-checkbox-title">Custom Logo Design</span> <!----></span></label></div><div class="calc-checkbox-item"><input type="checkbox" id="option__n4ejaqs0s1" value="50_1"> <label for="option__n4ejaqs0s1"><span><span class="calc-checkbox-title">Image Slider</span> <!----></span></label></div><div class="calc-checkbox-item"><input type="checkbox" id="option__n4ejaqs0s2" value="35_2"> <label for="option__n4ejaqs0s2"><span><span class="calc-checkbox-title">Contact Form</span> <!----></span></label></div><div class="calc-checkbox-item"><input type="checkbox" id="option__n4ejaqs0s3" value="50_3"> <label for="option__n4ejaqs0s3"><span><span class="calc-checkbox-title">Event Calendar</span> <!----></span></label></div><div class="calc-checkbox-item"><input type="checkbox" id="option__n4ejaqs0s4" value="25_4"> <label for="option__n4ejaqs0s4"><span><span class="calc-checkbox-title">Live Accordion FAQ</span> <!----></span></label></div></div> <div class="calc-item__description after"><span></span></div></div><!---->
+                        </div>
+                    </div>
+                </div> <div id="" class="calc-subtotal calc-list loaded">
+                    <div class="calc-subtotal-wrapper">
+                        <div class="calc-list-inner">
+                        <div class="calc-item-title calc-accordion"><h2>Total Summary</h2> <span class="calc-accordion-btn"><i class="ccb-icon-Path-3485" style="top: 1px; transform: rotate(180deg);"></i></span></div> <div class="calc-subtotal-list"><div class="calc-subtotal-list-accordion" style="max-height: 176px;"><div class="dropDown_field_id_0 sub-list-item" style="display: flex;"><span class="sub-item-title"> Website type </span> <span class="sub-item-space" id="WebsiteTypevalue"></span> <!----> <!----> <span class="sub-item-value"></span></div> <!----><div class="dropDown_field_id_1 sub-list-item" style="display: flex;"><span class="sub-item-title"> Seo type </span> <span class="sub-item-space"></span> <!----> <!----> <span class="sub-item-value"></span></div> <!----><div class="range_field_id_2 sub-list-item" style="display: flex;"><span class="sub-item-title"> Number of mockups </span> <span class="sub-item-space"></span> <span class="sub-item-value"> $ 50.00 </span> <!----> <span class="sub-item-value"></span></div> <!----><div class="range_field_id_3 sub-list-item" style="display: flex;"><span class="sub-item-title"> Number of pages </span> <span class="sub-item-space"></span> <span class="sub-item-value"> 1 </span> <!----> <span class="sub-item-value"></span></div> <!----><div class="radio_field_id_5 sub-list-item" style="display: flex;"><span class="sub-item-title"> Mobile ready </span> <span class="sub-item-space"></span> <!----> <!----> <span class="sub-item-value"></span></div> <!----><div class="checkbox_field_id_6 sub-list-item" style="display: flex;"><span class="sub-item-title"> Addons </span> <span class="sub-item-space"></span> <span class="sub-item-value"> $ 0.00 </span> <!----> <span class="sub-item-value"></span></div> <!----></div></div> <div class="calc-subtotal-list" style="margin-top: 20px; padding-top: 10px;"><div id="total_field_id_" class="sub-list-item total"><span class="sub-item-title">Summary for design</span> <span class="sub-item-value">$ 50.00</span></div></div> <!----> <div class="calc-subtotal-list calc-buttons">
+                                <div class="sub-list-item next-btn">
+                                    <div class="ccb-next-content">
+                                        <div class="payment-methods">
+                                            <!----> <!----> <!----> <!----> <div settings="[object Object]">
+                                                <div class="calc-form-wrapper">
+                                                    <div class="calc-buttons pdf-enable" style="">
+                                                        <button class="calc-btn-action ispro-wrapper success">
+                                                            Submit
+                                                            <span class="is-pro">
+                                                                <span class="pro-tooltip">
+                                                                    pro
+                                                                    <span class="pro-tooltiptext" style="visibility: hidden;">Feature Available <br> in Pro Version</span>
+                                                                </span>
+                                                            </span>
+                                                        </button> <button class="calc-btn-action">
+                                                            <span>PDF Download</span> <div class="invoice-btn-loader"></div> <span class="is-pro">
+                                                                <span class="pro-tooltip">
+                                                                    pro
+                                                                    <span class="pro-tooltiptext" style="visibility: hidden;">Feature Available <br> in Pro Version</span>
+                                                                </span>
+                                                            </span>
+                                                        </button> <button class="calc-btn-action">
+                                                            <span>Send Quote</span> <span class="is-pro">
+                                                                <span class="pro-tooltip">
+                                                                    pro
+                                                                    <span class="pro-tooltiptext" style="visibility: hidden;">Feature Available <br> in Pro Version</span>
+                                                                </span>
+                                                            </span>
+                                                        </button>
+                                                    </div> <div class="ccb-cf-wrap" style="position: relative; display: none;">
+                                                        <div class="pro-border"></div> <span class="is-pro">
+                                                            <span class="pro-tooltip">
+                                                                pro
+                                                                <span class="pro-tooltiptext" style="visibility: hidden;">Feature Available <br> in Pro Version</span>
+                                                            </span>
+                                                        </span> <div class="ccb-contact-form7"><div role="form" id="wpcf7-f10-p6534-o1" lang="en-US" dir="ltr" class="wpcf7"><div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div> <form action="/cost-calculator/contact-form/#wpcf7-f10-p6534-o1" method="post" novalidate="novalidate" data-status="init" class="wpcf7-form init"><div style="display: none;"><input type="hidden" name="_wpcf7" value="10"> <input type="hidden" name="_wpcf7_version" value="5.6.3"> <input type="hidden" name="_wpcf7_locale" value="en_US"> <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-p6534-o1"> <input type="hidden" name="_wpcf7_container_post" value="6534"> <input type="hidden" name="_wpcf7_posted_data_hash" value=""></div> <p><label> Your Name (required)<br> <span data-name="your-name" class="wpcf7-form-control-wrap"><input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"></span></label></p> <p><label> Your Email (required)<br> <span data-name="your-email" class="wpcf7-form-control-wrap"><input type="email" name="your-email" value="" size="40" aria-required="true" aria-invalid="false" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"></span></label></p> <p><label> Subject<br> <span data-name="your-subject" class="wpcf7-form-control-wrap"><input type="text" name="your-subject" value="" size="40" aria-invalid="false" class="wpcf7-form-control wpcf7-text"></span></label></p> <p><label> Your Message<br> <span data-name="your-message" class="wpcf7-form-control-wrap"><textarea name="your-message" cols="40" rows="10" aria-invalid="false" class="wpcf7-form-control wpcf7-textarea"></textarea></span></label></p> <p><input type="submit" value="Send" class="wpcf7-form-control has-spinner wpcf7-submit"></p> <div aria-hidden="true" class="wpcf7-response-output"></div></form></div></div> <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <div class="calc-list-inner" style="display: none;">
+                            <div class="calc-item-title"><h2>Your service request has been completed!</h2> <span class="calc-item-title-description">We have sent your request information to your email.</span></div> <div class="calc-subtotal-list"><div class="sub-list-item"><span class="sub-item-title"> Issued on: </span> <span class="sub-item-space"></span> <span class="sub-item-value">  </span></div> <div class="sub-list-item"><span class="sub-item-title"> Payment method: </span> <span class="sub-item-space"></span> <span class="sub-item-value">  </span></div> <div class="sub-list-item"><span class="sub-item-title"> Summary for design: </span> <span class="sub-item-space"></span> <span class="sub-item-value"> $ 50.00 </span></div></div> <div class="calc-item">
+                                <div class="ccb-btn-wrap ccb-finish pdf-enable" style="margin-top: 20px;">
+                                    <div class="ccb-btn-container calc-buttons">
+                                        <button class="calc-btn-action invoice-button success"><span>PDF Download</span> <div class="invoice-btn-loader"></div></button> <button class="calc-btn-action">
+                                            <span>Send Quote</span> <span class="is-pro">
+                                                <span class="pro-tooltip">
+                                                    pro
+                                                    <span class="pro-tooltiptext" style="visibility: hidden;">Feature Available <br> in Pro Version</span>
+                                                </span>
+                                            </span>
+                                        </button> <button class="calc-btn-action">
+                                            Create new calculation
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <div class="calc-list-inner calc-notice" style="display: none;"><div class="calc-notice-wrap"><div class="calc-notice-icon"><img alt="notice img" src="https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist/img/success.png"></div> <div class="calc-notice-content"><span class="calc-notice-title"></span> <!----></div></div></div>
+                    </div> <div>
+                        <div>
+                            <div class="ccb-send-quote">
+                                <div class="ccb-send-quote__overlay">
+                                    <div class="ccb-send-quote__wrapper">
+                                        <div class="ccb-send-quote__form">
+                                            <div class="ccb-send-quote__header"><div class="ccb-send-quote__title">Email Quote</div> <div class="ccb-send-quote__close"><i class="ccb-icon-close"></i></div></div> <div class="ccb-send-quote__body">
+                                                <div class="ccb-send-quote__input"><label for="username" class="required">Name</label> <input type="text" placeholder="Enter name" id="username"></div> <div class="ccb-send-quote__input"><label for="useremail" class="required">Email</label> <input type="text" placeholder="Enter Email" id="useremail"></div> <div class="ccb-send-quote__textarea"><label for="usermessage">Message</label> <textarea name="message" id="usermessage" cols="30" rows="10" placeholder="Enter message"></textarea></div> <div class="ccb-send-quote__file">
+                                                    <i class="ccb-icon-pdf"></i> <span>
+                                                        Web Design.pdf
+                                                    </span>
+                                                </div> <div class="ccb-send-quote__submit"><button>Send</button></div> <!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <div slot="pdf-content">
+                            <div class="ccb-invoice" style="display: none;">
+                                <div class="ccb-invoice-container">
+                                    <div class="ccb-invoice-header"><div class="ccb-invoice-logo"><!----> <img src="https://stylemixthemes.com/cost-calculator/wp-content/uploads/2022/09/Group-86502.png" alt="Invoice logo"></div> <div class="ccb-invoice-date"><span>01/12/2023 10:27</span></div></div> <div class="ccb-invoice-company">
+                                        <span>
+                                            Fast and Pack Co. number one in the fast and reliable delivery of goods industry anywhere in the world. We love our clients, therefore we provide only the most effective ways of packing and sending items in the shortest time at a reasonable price.
+                                        </span>
+                                    </div> <div class="ccb-invoice-table"><div class="ccb-invoice-table__header"><span>Order: </span> <!----></div> <div class="ccb-invoice-table__body hideForm"><div class="ccb-invoice-table__summary"><span class="ccb-invoice-table__title">Total Summary</span> <ul><li><span class="ccb-invoice-row"><span>Number of mockups</span> <span>$ 50.00</span> <!----></span> <!----></li><li><span class="ccb-invoice-row"><span>Number of pages</span> <span>1</span> <!----></span> <!----></li></ul> <span class="ccb-invoice-table__total"><span>Summary for design: </span> <span>$ 50.00</span></span> <div class="ccb-invoice-table__payment"><div>Payment method:</div> <div></div></div></div> <!----></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">
+        (function () {
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        })();
+
+        $("#websitetypeid").change(function () {
+            debugger
+            var websitetypevalue = $(this).val();
+            var Weight = $("#quantityField2").val();
+            if (Weight == "") {
+                Weight = 0;
+            }
+            var sum = parseInt(Height) + parseInt(Weight);
+            $("#spanheight").next().text(Height);
+
+            $("#totalHW").text(sum);
+            var totalHW = $("#totalHW").text();
+            var TotalDD = $("#TotalDD").text();
+            if (TotalDD == "$ ") {
+                TotalDD = 0;
+            }
+            var sumT = parseInt(totalHW) + parseInt(TotalDD);
+            $("#TotalAll").text(sumT);
+        });
+        //function Changevalue(){
+        //    var obj = 
+        //}
+    </script>
+    <link rel='stylesheet' id='ccb-icons-list-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist/css/icon/style.css?ver=3.1.7' media='all' />
+    <link rel='stylesheet' id='calc-builder-app-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist/css/style.css?ver=3.1.7' media='all' />
+    <link rel='stylesheet' id='ccb-material-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist/css/material.css?ver=3.1.7' media='all' />
+    <link rel='stylesheet' id='ccb-material-style-css' href='https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist/css/material-styles.css?ver=3.1.7' media='all' />
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.3' id='swv-js'></script>
+    <script id='contact-form-7-js-extra'>
+        var wpcf7 = { "api": { "root": "https:\/\/stylemixthemes.com\/cost-calculator\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+    </script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.3' id='contact-form-7-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.0.0' id='jquery-blockui-js'></script>
+    <script id='wc-add-to-cart-js-extra'>
+        var wc_add_to_cart_params = { "ajax_url": "\/cost-calculator\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/cost-calculator\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/stylemixthemes.com\/cost-calculator\/cart-page\/", "is_cart": "", "cart_redirect_after_add": "no" };
+    </script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.0.0' id='wc-add-to-cart-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.7.0.0' id='js-cookie-js'></script>
+    <script id='woocommerce-js-extra'>
+        var woocommerce_params = { "ajax_url": "\/cost-calculator\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/cost-calculator\/?wc-ajax=%%endpoint%%" };
+    </script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.0.0' id='woocommerce-js'></script>
+    <script id='wc-cart-fragments-js-extra'>
+        var wc_cart_fragments_params = { "ajax_url": "\/cost-calculator\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/cost-calculator\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_0b023dbd7dfe5ca31a04b699b4cad706", "fragment_name": "wc_fragments_0b023dbd7dfe5ca31a04b699b4cad706", "request_timeout": "5000" };
+    </script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=7.0.0' id='wc-cart-fragments-js'></script>
+    <script id='twentyseventeen-skip-link-focus-fix-js-extra'>
+        var twentyseventeenScreenReaderText = { "quote": "<svg class=\"icon icon-quote-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-quote-right\" xlink:href=\"#icon-quote-right\"><\/use> <\/svg>", "expand": "Expand child menu", "collapse": "Collapse child menu", "icon": "<svg class=\"icon icon-angle-down\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-down\" xlink:href=\"#icon-angle-down\"><\/use> <span class=\"svg-fallback icon-angle-down\"><\/span><\/svg>" };
+    </script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/assets/js/skip-link-focus-fix.js?ver=20161114' id='twentyseventeen-skip-link-focus-fix-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/assets/js/navigation.js?ver=20161203' id='twentyseventeen-navigation-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/assets/js/global.js?ver=123123' id='twentyseventeen-global-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/themes/stm-plugins-theme/assets/js/jquery.scrollTo.js?ver=2.1.2' id='jquery-scrollto-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist/sticky/ResizeSensor.js?ver=3.1.7' id='cbb-resize-sensor-js-js'></script>
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist//sticky/sticky-sidebar.js?ver=3.1.7' id='cbb-sticky-sidebar-js-js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js?ver=3.1.7' id='ccb-lodash-js-js'></script>
+    <script id='ccb-lodash-js-js-after'>
+        window.ccb_lodash = window.ccb_lodash ? window.ccb_lodash : _.noConflict();
+    </script>
+
+    <script src='https://stylemixthemes.com/cost-calculator/wp-content/plugins/cost-calculator-builder/frontend/dist/bundle.js?ver=3.1.7' id='calc-builder-main-js-js'></script>
+
+</body>
+</html>

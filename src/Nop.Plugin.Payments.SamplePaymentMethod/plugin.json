@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "SampleNewPayment",
+  "SystemName": "Payments.SamplePaymentMethod",
+  "Version": "1.16",
+  "SupportedVersions": [ "4.60" ],
+  "Author": "nopCommerce team",
+  "DisplayOrder": -1,
+  "FileName": "Nop.Plugin.Payments.SamplePaymentMethod.dll",
+  "Description": "Sample Payment Method"
+}

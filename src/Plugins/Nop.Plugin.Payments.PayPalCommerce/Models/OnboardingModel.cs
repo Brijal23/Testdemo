@@ -1,11 +1,9 @@
-﻿using Nop.Web.Framework.Models;
-
-namespace Nop.Plugin.Payments.PayPalCommerce.Models
+﻿namespace Nop.Plugin.Payments.PayPalCommerce.Models
 {
     /// <summary>
     /// Represents an onboarding model
     /// </summary>
-    public record OnboardingModel : BaseNopModel
+    public record OnboardingModel :BaseNopModel
     {
         #region Properties
 

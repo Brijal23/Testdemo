@@ -17,8 +17,12 @@ namespace Nop.Plugin.Payments.NewPayment.Components
         public IViewComponentResult Invoke()
         {
             
-            return View("~/Plugins/Payments.Newpayment/Views/NewPaymentInfo.cshtml");
-            //return View("~/Plugins/Payment.Newpayment/Views/NewPaymentInfo.cshtml");
+            return View("~/Plugins/Payments.NewPayment/Views/Payment/CustomTotals.cshtml");
+           // return View("~/Plugins/Payments.Newpayment/Views/NewPaymentInfo.cshtml");
         }
+        //public  string GetConfigurationPageUrl()
+        //{
+        //    return $"{_webHelper.GetStoreLocation()}Admin/{Payment}/{CustomTotals}";
+        //}
     }
 }

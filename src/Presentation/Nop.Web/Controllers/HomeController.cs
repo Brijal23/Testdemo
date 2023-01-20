@@ -8,18 +8,18 @@ namespace Nop.Web.Controllers
         {
             return View();
         }
-        public virtual IActionResult ContactForm()
-        {
-            return View();
-        }
-        public virtual IActionResult Paymentmethod()
-        {
+        //public virtual IActionResult ContactForm()
+        //{
+        //    return View();
+        //}
+        //public virtual IActionResult Paymentmethod()
+        //{
 
-            return View();
-        }
-        public virtual IActionResult CustomTotals()
-        {
-            return View();
-        }
+        //    return View();
+        //}
+        //public virtual IActionResult CustomTotals()
+        //{
+        //    return View();
+        //}
     }
 }

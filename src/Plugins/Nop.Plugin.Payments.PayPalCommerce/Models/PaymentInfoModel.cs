@@ -9,12 +9,12 @@ namespace Nop.Plugin.Payments.PayPalCommerce.Models
     {
         #region Properties
 
-        public string OrderId { get; set; }
+    public string OrderId { get; set; }
 
-        public string OrderTotal { get; set; }
+    public string OrderTotal { get; set; }
 
-        public string Errors { get; set; }
+    public string Errors { get; set; }
 
-        #endregion
+    #endregion
     }
 }

@@ -16,7 +16,7 @@ namespace Nop.Plugin.Payments.NewPayment.Models
         public ConfigurationModel()
         {
             PaymentTypes = new List<SelectListItem>();
-            OnboardingModel = new OnboardingModel();
+            //OnboardingModel = new OnboardingModel();
         }
 
         #endregion
@@ -82,7 +82,7 @@ namespace Nop.Plugin.Payments.NewPayment.Models
         public bool DisplayPayLaterMessages { get; set; }
         public bool DisplayPayLaterMessages_OverrideForStore { get; set; }
 
-        public OnboardingModel OnboardingModel { get; set; }
+        //public OnboardingModel OnboardingModel { get; set; }
 
         #endregion
     }

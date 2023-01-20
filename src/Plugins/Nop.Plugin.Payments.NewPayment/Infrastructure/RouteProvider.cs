@@ -13,8 +13,13 @@ namespace Nop.Plugin.Payments.NewPayment.Infrastructure
         /// Register routes
         /// </summary>
         /// <param name="endpointRouteBuilder">Route builder</param>
+        
         public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
         {
+            //endpointRouteBuilder.MapControllerRoute(name: "CustomTotalspage",
+            //   "Admin/Payment/CustomTotals",
+            //    defaults: new { controller = "Payment", action = "CustomTotals" });
+
             endpointRouteBuilder.MapControllerRoute("Plugin.Payments.NewPayment.CustomTotals",
                 "Admin/Payment/CustomTotals",
                 new { controller = "Payment", action = "CustomTotals" });

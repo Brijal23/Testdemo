@@ -110,7 +110,10 @@ namespace Nop.Plugin.Payments.NewPayment
         {
             return base.InstallAsync();
         }
-
+        public override Task UninstallAsync()
+        {
+            return base.UninstallAsync();
+        }
         //public Task ManageSiteMapAsync(SiteMapNode rootNode)
         //{
         //    throw new NotImplementedException();
@@ -136,10 +139,7 @@ namespace Nop.Plugin.Payments.NewPayment
         //    throw new NotImplementedException();
         //}
 
-        public override Task UninstallAsync()
-        {
-            return base.UninstallAsync();
-        }
+
 
         //public Task<IList<string>> ValidatePaymentFormAsync(IFormCollection form)
         //{
